@@ -1,0 +1,16 @@
+BODY{
+    background: url("gray.jpg");
+    background-size: cover;
+    width: 100%;
+    color: white;
+}
+TD{
+    font-size: 25px;
+}
+A{
+    text-decoration: none;
+    color:white;
+}
+input[type="submit"]:hover{
+    text-decoration: underline;
+}

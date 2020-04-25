@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Cimpatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>user login</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style1.css">
+        <script type="text/javascript">
+
+            function validate()
+            {
+            var email=document.forms["regform"]["email"];
+            var pass=document.forms["regform"]["pass"];
+        if(email.value=="")
+        {
+        window.alert("please enter Email-Id");
+        email.focus();
+        return false;    
+        }
+
+        if(email.value.indexOf("@",0)<0)
+        {
+        window.alert("please enter valid id");
+        email.focus();
+        return false;    
+        }
+
+        if(email.value.indexOf(".",0)<0)
+        {
+        window.alert("please enter valid id");
+        email.focus();
+        return false;    
+        }
+        if(pass.value=="")
+        {
+            window.alert("please enter your fpassword");
+            pass.focus();
+            return false;
+        }
+        if(pass1.value != pass.value)
+        {
+            window.alert("enter correct password");
+            pass1.focus();
+            return false;
+        }
+}
+            
+        </script>
+    </head>
+    <body>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                    <a href="#" class="active">Stream analysis</a>
+                    <a href="index.html">Home</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div></nav>
+                  <script>
+                        function myFunction() {
+                          var x = document.getElementById("myTopnav");
+                          if (x.className === "topnav") {
+                            x.className += " responsive";
+                          } else {
+                            x.className = "topnav";
+                          }
+                        }
+                        </script>
+        <div class="loginBox">
+            <form method="POST" action="user.php" name="regform" onsubmit="return validate()">
+                <img src="person-sign.jpg" class="user">
+                <h2>User Login</h2>
+                <p>Email</p>
+                <input type="text" name="email" placeholder="abc@email.com">
+                    <p>Password</p>
+                    <input type="password" name="pass" placeholder="enter your password">
+                    <input type="submit" value="Sign In"><br>
+                    <center><a href="new_user.html">Register?</a></center>
+                    <br><br>
+            </form><br><br><br>
+        </div>
+        <div class="footer">
+                <h4>&copy;COPYRIGHT <br> All Rights Reserved</h4>
+                </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+    <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Cimpatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact-Us</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="cont_style.css">
+    </head>
+    <body><nav>
+            <div class="topnav" id="myTopnav">
+                    <a href="#" class="active">Stream analysis</a>
+                    <a href="index.html">Home</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
+                </nav>
+        <div class="contact-title">
+            <h1> Contact-Us</h1>
+            <h2>We are always here to serve you!</h2>
+        </div>
+        <div class="contact-form">
+            <form id="contact-form" method="POST" action="contact.php">
+                <input name="name" type="name" class="form-control" placeholder="enter your name">
+                <br>
+                <input type="email" name="email" class="form-control" placeholder="enter your email_id"><br>
+                <textarea name="message" class="form-control" placeholder="message" row="4"></textarea><br>
+                <input type="submit" class="form-control submit" value="Send Message">
+            </form>
+            <script>
+                    function myFunction() {
+                      var x = document.getElementById("myTopnav");
+                      if (x.className === "topnav") {
+                        x.className += " responsive";
+                      } else {
+                        x.className = "topnav";
+                      }
+                    }
+                </script>
+        </div>
+        <div class="footer">
+                <h4>&copy;COPYRIGHT <br> All Rights Reserved</h4>
+                </div>
+    </body>
+</html>
